@@ -1,3 +1,17 @@
+# Ejercicio 1
+segTotales = 2.5e+08
+segDia = 24 * 60 * 60
+segHora = 60 * 60
+diasTotales = segTotales %/% segDia
+horaFinal = (segTotales %% segDia) %/% segHora
+
+aniosNoBisiestosTotales = diasTotales %/% 365
+# Al haber pasado 7 anios, tenemos el 2020 y 2024 como bisiestos
+diaFinal = diasTotales - (365 * 7 + 2)
+anioFinal = 2018 + 7
+
+# Resultado:llegariamos a la hora 12 (horaFinal) del dia 336 (diaFinal) del anio 2025 (anioFinal)
+
 # Ejercicio 2
 getEcuacionPrimerGrado = function(a, b, c) {
   (c - b) / a;
@@ -15,11 +29,3 @@ round(expresionEj3, digits = 3);
 expresionEj4 = Mod((2+3i)^2/(5+8i));
 round(expresionEj4, digits = 3);
 
-# Ejercicio 1
-segundosTotales = 2.5e+08;
-horasTotales = segundosTotales %/% 60;
-diasTotales = horasTotales %/% 24;
-horaFinal = horasTotales %% 24;
-
-aniosNoBisiestosTotales = diasTotales / 365;
-diasNoBisiestoFinal = diasTotales %% 365;
